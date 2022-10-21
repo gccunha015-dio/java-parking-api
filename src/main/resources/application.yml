@@ -4,10 +4,10 @@ springdoc:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/parking
+    url: jdbc:${DATABASE_URL:postgresql://localhost:5432/parking}
     driver-class-name: org.postgresql.Driver
-    username: admin
-    password: 123
+    username: ${PGUSER:admin}
+    password: ${PGPASSWORD:123}
   jpa:
     generate-ddl: true
     hibernate.ddl-auto: update

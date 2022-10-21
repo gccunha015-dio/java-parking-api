@@ -18,6 +18,6 @@ public class Parking {
   private String model;
   private String color;
   private LocalDateTime entryDate;
-  private LocalDateTime exitDate;
+  private LocalDateTime checkOutDate;
   private Double bill;
 }

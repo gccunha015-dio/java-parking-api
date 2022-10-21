@@ -18,3 +18,9 @@ server:
     include-exception: false
     include-stacktrace: never
     include-message: always
+  servlet:
+    context-path: ${CONTEXT_PATH:/}
+
+info:
+  app:
+    version: v0.0.1
